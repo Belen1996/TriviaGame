@@ -8,6 +8,9 @@
 
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 </head>
 
 <body>
@@ -19,18 +22,21 @@
       <button id="start-button">Start!</button>
     </section>
     <section id="game">
-      <div>Time remaining: <span id="timer"></span></div>
-      <div>Score: <span id="score"></span></div>
-      <div>Misses: <span id="misses"></span></div>
+      <div id="time">Time remaining: <span id="timer"></span></div>
+      <br>
+      <div id="scorenum">Score: <span id="score"></span></div>
+      <div id="missesnum">Misses: <span id="misses"></span></div>
       <form action="#" id="question-form">
         <div id="questions"></div>
+        <br>
         <input id="submit" type="submit" value="Check your answers!">
+        <br>
         <input id="startover" type="reset" value="Start over!">
       </form>
     </section>
   </main>
   <footer>
-    <div>Copyright &copy;2018</div>
+    <div id="copyright">Copyright &copy;2018</div>
   </footer>
   <script src="./assets/javascript/app.js"></script>
 </body>

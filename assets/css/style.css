@@ -1,13 +1,15 @@
 body {
     background-image: url("../images/wallpaper.jpg");
-    background-size: 100%;
+    background-size: 250%;
+    background-repeat: no-repeat;
 }
 
 h1 {
     color: white;
-    font-family: 'Wendy One', sans-serif;
-    font-size: 50px;
+    font-family: 'Rancho', cursive;
+    font-size: 100px;
     text-align: center;
+    letter-spacing: 3px;
 }
 
 #triviabox {
@@ -22,4 +24,75 @@ h1 {
 #time {
     text-align: center;
     font-family: 'Wendy One', sans-serif;
+}
+
+#start-button {
+    background-color: #4FFBDF;
+    border: groove #845EC2;
+    color: #150159;
+    padding: 15px 32px;
+    font-family: 'Rancho', cursive;
+    text-align: center;
+    display: block;
+    font-size: 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#copyright {
+    text-align: center;
+}
+
+#timer {
+    font-family: 'Indie Flower', cursive;
+    font-size: 50px;
+}
+
+#time {
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+}
+
+#scorenum {
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+    text-align: center;
+}
+
+#missesnum {
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+    text-align: center;
+}
+
+#question-form {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+#submit {
+    background-color: #4FFBDF;
+    border: groove #845EC2;
+    color: #150159;
+    padding: 15px 32px;
+    font-family: 'Rancho', cursive;
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#startover {
+    background-color: #4FFBDF;
+    border: groove #845EC2;
+    color: #150159;
+    padding: 15px 32px;
+    font-family: 'Rancho', cursive;
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
 }

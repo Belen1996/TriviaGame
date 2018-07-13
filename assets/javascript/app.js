@@ -206,7 +206,7 @@ class Game {
   }
 
   static createGame(questions, renderCounterCallback, timeIsUpCallback) {
-    return new Game(0, 20, questions, renderCounterCallback, timeIsUpCallback, null);
+    return new Game(0, 150, questions, renderCounterCallback, timeIsUpCallback, null);
   }
 
 }
@@ -214,31 +214,9 @@ class Game {
 
 let questions = [
   
-  {
-    "questionId": 1,
-    "questionText": "Question?",
-    "responses": [
-      {
-        "points": 1,
-        "responseText": "Response 1"
-      },
-      {
-        "points": 0,
-        "responseText": "Response 2"
-      },
-      {
-        "points": 0,
-        "responseText": "Response 3"
-      },
-      {
-        "points": 0,
-        "responseText": "Response 4"
-      }
-    ]
-  },
   
   {
-    "questionId": 3,
+    "questionId": 1,
     "questionText": "In Aladdin, what is the name of Jasmine’s pet tiger?",
     "responses": [
       {
@@ -247,33 +225,295 @@ let questions = [
       },
       {
         "points": 0,
-        "responseText": "Anibal"
-      }
+        "responseText": "Nilgai"
+      },
+      {
+        "points": 0,
+        "responseText": "Chinkara"
+      },
+      {
+        "points": 0,
+        "responseText": "Bhaloo"
+      },
     ]
   },
 
-  {
-    "questionId": 2,
-    "questionText": "Question 2?",
-    "responses": [
-      {
-        "points": 0,
-        "responseText": "Response 1.b"
-      },
-      {
-        "points": 0,
-        "responseText": "Response 2.b"
-      },
-      {
-        "points": 0,
-        "responseText": "Response 3.b"
-      },
-      {
-        "points": 1,
-        "responseText": "Response 4.b"
-      }
-    ]
-  }];
+{
+  "questionId": 2,
+  "questionText": "Which Disney movie was the first to have a soundtrack album?",
+  "responses": [
+    {
+      "points": 0,
+      "responseText": "Cinderella"
+    },
+    {
+      "points": 0,
+      "responseText": "Beauty and The Beast"
+    },
+    {
+      "points": 1,
+      "responseText": "Snow White and the Seven Dwarfs"
+    },
+    {
+      "points": 0,
+      "responseText": "Little Mermaid"
+    }
+  ]
+},
+
+{
+  "questionId": 3,
+  "questionText": "Who said this quote: “Think of all the joy you’ll find, when you leave the world behind and bid your cares goodbye. You can fly.”",
+  "responses": [
+    {
+      "points": 0,
+      "responseText": "Olaf from Frozen"
+    },
+    {
+      "points": 0,
+      "responseText": "Simba from Lion Kink"
+    },
+    {
+      "points": 0,
+      "responseText": "Mickey Mouse"
+    },
+    {
+      "points": 1,
+      "responseText": "Peter Pan"
+    }
+  ]
+},
+
+{
+  "questionId": 4,
+  "questionText": "Who was the first Disney princess?",
+  "responses": [
+    {
+      "points": 0,
+      "responseText": "Pocahontas"
+    },
+    {
+      "points": 1,
+      "responseText": "Snow White"
+    },
+    {
+      "points": 0,
+      "responseText": "Jasmine"
+    },
+    {
+      "points": 0,
+      "responseText": "Ariel"
+    }
+  ]
+},
+
+{
+  "questionId": 5,
+  "questionText": "What are the names of Cinderella's evil stepsisters?",
+  "responses": [
+    {
+      "points": 1,
+      "responseText": "Anastasia and Drizella"
+    },
+    {
+      "points": 0,
+      "responseText": "Beatrice and Daphinie"
+    },
+    {
+      "points": 0,
+      "responseText": "Bertha and Cheryl"
+    },
+    {
+      "points": 0,
+      "responseText": "Gretel and Helga"
+    }
+  ]
+},
+
+{
+  "questionId": 6,
+  "questionText": "What does the enchanted cake in Brave turn Merida's mother into?",
+  "responses": [
+    {
+      "points": 0,
+      "responseText": "A frog"
+    },
+    {
+      "points": 0,
+      "responseText": "A mirror"
+    },
+    {
+      "points": 0,
+      "responseText": "A tree"
+    },
+    {
+      "points": 1,
+      "responseText": "A bear"
+    }
+  ]
+},
+
+{
+  "questionId": 7,
+  "questionText": "Who did Pocahontas’ father want her to marry?",
+  "responses": [
+    {
+      "points": 0,
+      "responseText": "Siddharth"
+    },
+    {
+      "points": 1,
+      "responseText": "Kocoum"
+    },
+    {
+      "points": 0,
+      "responseText": "Reyansh"
+    },
+    {
+      "points": 0,
+      "responseText": "Aditya"
+    }
+  ]
+},
+
+{
+  "questionId": 8,
+  "questionText": "What were Aladdin’s three wishes?",
+  "responses": [
+    {
+      "points": 0,
+      "responseText": "To marry Jasmine, have a magic carpet and become a prince"
+    },
+    {
+      "points": 1,
+      "responseText": "To become a prince, to be rescued from drowning and to free the genie"
+    },
+    {
+      "points": 0,
+      "responseText": "To become rich, to become a genie and to have a pet monkey"
+    },
+    {
+      "points": 0,
+      "responseText": "To have magic powers, to become rich and to marry Jasmine"
+    }
+  ]
+},
+
+{
+  "questionId": 9,
+  "questionText": "Which princess is based on a real person?",
+  "responses": [
+    {
+      "points": 1,
+      "responseText": "Pocahonstas"
+    },
+    {
+      "points": 0,
+      "responseText": "Brave"
+    },
+    {
+      "points": 0,
+      "responseText": "Mulan"
+    },
+    {
+      "points": 0,
+      "responseText": "Tiana"
+    }
+  ]
+},
+
+{
+  "questionId": 10,
+  "questionText": "What U.S. city is the setting of The Princess and The Frog inspired by?",
+  "responses": [
+    {
+      "points": 0,
+      "responseText": "New York"
+    },
+    {
+      "points": 0,
+      "responseText": "Chicago"
+    },
+    {
+      "points": 1,
+      "responseText": "New Orleans"
+    },
+    {
+      "points": 0,
+      "responseText": "Los Angeles"
+    }
+  ]
+},
+
+{
+  "questionId": 11,
+  "questionText": "What is the name of the tea cup from Beauty and the Beast?",
+  "responses": [
+    {
+      "points": 1,
+      "responseText": "Chip Potts"
+    },
+    {
+      "points": 0,
+      "responseText": "Billy Potts"
+    },
+    {
+      "points": 0,
+      "responseText": "Chippy Potts"
+    },
+    {
+      "points": 0,
+      "responseText": "Tea Cuppy"
+    }
+  ]
+},
+
+{
+  "questionId": 12,
+  "questionText": "What is the name of Mulan’s pet dragon?",
+  "responses": [
+    {
+      "points": 0,
+      "responseText": "Haruto"
+    },
+    {
+      "points": 0,
+      "responseText": "Riku"
+    },
+    {
+      "points": 0,
+      "responseText": "Asahi"
+    },
+    {
+      "points": 1,
+      "responseText": "Mushu"
+    }
+  ]
+},
+
+{
+  "questionId": 13,
+  "questionText": "In Peter Pan, Captain Hook had a hook on which one of his hands? ",
+  "responses": [
+    {
+      "points": 0,
+      "responseText": "He had both hands"
+    },
+    {
+      "points": 0,
+      "responseText": "His right hand"
+    },
+    {
+      "points": 0,
+      "responseText": "He did not have a hook"
+    },
+    {
+      "points": 1,
+      "responseText": "His left hand"
+    }
+  ]
+},
+]
 
 let game = Game.createGame(questions, renderTimer, endGame);
 
