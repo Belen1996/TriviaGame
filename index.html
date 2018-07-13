@@ -1,0 +1,38 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Trivia Game</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Disney Trivia!</h1>
+  </header>
+  <main>
+    <section id="start">
+      <button id="start-button">Start!</button>
+    </section>
+    <section id="game">
+      <div>Time remaining: <span id="timer"></span></div>
+      <div>Score: <span id="score"></span></div>
+      <div>Misses: <span id="misses"></span></div>
+      <form action="#" id="question-form">
+        <div id="questions"></div>
+        <input id="submit" type="submit" value="Check your answers!">
+        <input id="startover" type="reset" value="Start over!">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div>Copyright &copy;2018</div>
+  </footer>
+  <script src="./assets/javascript/app.js"></script>
+</body>
+
+</html>
